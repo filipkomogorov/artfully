@@ -4,6 +4,9 @@ module.exports = {
     extend: {
       width: {
         'screenWidthLarge': '128rem'
+      },
+      color: {
+        white: '#fafafa'
       }
     },
   },

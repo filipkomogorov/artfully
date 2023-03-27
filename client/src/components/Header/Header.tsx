@@ -1,14 +1,24 @@
-import React from 'react'
-import logoSmall from '/public/logoSmall.png'
+import React from "react";
+import { Link } from "react-router-dom";
+import Navigation from "../Navigation/Navigation";
+import Search from "../SearchBar/Search";
+import logoSmall from "/src/assets/logoSmall.png";
 
 const Header = () => {
   return (
-    <div className='w-screenWidthLarge mx-auto my-0'>
-        <div>
-            <img src={logoSmall} alt="logo of artfully" />
-        </div>
-    </div>
-  )
-}
+    <div className="w-screenWidthLarge mx-auto mt-8 flex flex-row">
+      <div>
+        <Link to="/">
+          <img src={logoSmall} alt="logo of artfully" className="w-60" />
+        </Link>
+      </div>
+      <div className="flex">
+        <Navigation />
+      </div>
 
-export default Header
+      <Search />
+    </div>
+  );
+};
+
+export default Header;
