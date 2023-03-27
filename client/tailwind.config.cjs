@@ -4,6 +4,11 @@ module.exports = {
     extend: {
       width: {
         'screenWidthLarge': '128rem'
+      },
+      colors: {
+        white: '#fafafa',
+        darkBlue: '#1A1A2E',
+        lightBlue: '#2196f3'
       }
     },
   },
