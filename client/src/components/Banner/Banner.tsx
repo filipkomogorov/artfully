@@ -3,8 +3,8 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <div>
-Banner
+    <div className='w-screenWidthLarge h-bannerHeightDesktop bg-red-100 mx-auto my-sizeXl'>
+
     </div>
   )
 }
