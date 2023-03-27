@@ -5,8 +5,10 @@ module.exports = {
       width: {
         'screenWidthLarge': '128rem'
       },
-      color: {
-        white: '#fafafa'
+      colors: {
+        white: '#fafafa',
+        darkBlue: '#1A1A2E',
+        lightBlue: '#2196f3'
       }
     },
   },

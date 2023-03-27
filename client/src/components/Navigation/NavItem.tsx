@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavItem: React.FC = () => {
+interface NavItemProps {
+  name: string,
+  link: string
+}
+
+const NavItem = ({...props}:NavItemProps) => {
   return (
 
-    <div className='skewedDiv'>
-        <Link to='/'>Text </Link>
+    <div className='navItem skewedDiv bg-darkBlue text-white'>
+        <div className="navLink">
+        <Link className="z-10 py-5 px-24 " to={`${props.link}`}>{props.name}</Link>
+        </div>
     </div>
 
   );

@@ -3,19 +3,35 @@
 @tailwind utilities;
 
 html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    background-color: #F6F5F7;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-.skewedDiv{
-    padding: 5px 6rem;
-    transform: skew(-20deg); 
-    -webkit-transform: skew(-20deg) 
+  font-size: 62.5%;
 }
 
+body {
+  background-color: #f6f5f7;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
 
+.skewedDiv {
+  transform: skew(-20deg);
+  display: inline-block;
+}
+
+.navItem {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.navItem > *:not(:last-child){
+  margin-right: 5px !;
+}
+
+.navItem:hover{
+  cursor: pointer;
+  background-color: #2196f3;
+}
+
+.navLink {
+  transform: skew(20deg);
+}
