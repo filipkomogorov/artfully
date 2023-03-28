@@ -7,9 +7,13 @@ html {
 }
 
 body {
-  background-color: #f6f5f7;
+  background-color: #F6F6F8;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+}
+
+.largeCard{
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 
 .skewedDiv {
