@@ -6,19 +6,16 @@ import logoSmall from "/src/assets/logoSmall.png";
 
 const Header = () => {
   return (
-    <div className="w-screenWidthLarge mx-auto mt-8 flex flex-row">
-      <div>
-        <Link to="/">
-          <img src={logoSmall} alt="logo of artfully" className="w-60" />
-        </Link>
-      </div>
-      <div className="w-full flex flex-col justify-center items-center gap-10">
-        <div className="flex justify-end items-center w-full">
-          <div className="flex-shrink-0 flex-row">
-            <Search />
-          </div>
-          {/* TODO - Make the icons functionality */}
+    <div className="w-screenWidthLarge mx-auto mt-8 flex flex-col">
+      <div className="flex flex-row justify-between">
+        <div>
+          <Link to="/">
+            <img src={logoSmall} alt="logo of artfully" className="w-60" />
+          </Link>
+        </div>
+        <div>
           <div className="mx-4 flex flex-row gap-2">
+            <Search />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -48,11 +45,10 @@ const Header = () => {
               />
             </svg>
           </div>
-          {/* <p className="ml-4">Text here</p> */}
         </div>
-        <div>
-          <Navigation />
-        </div>
+      </div>
+      <div className="self-center">
+        <Navigation />
       </div>
     </div>
   );
